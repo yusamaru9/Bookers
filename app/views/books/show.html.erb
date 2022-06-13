@@ -1,8 +1,21 @@
-<h2>タイトル</h2>
-<p><%= @book.title %></p>
+<body>
+  <p id="notice">Book was successfully created.</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+  
+  <p>
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
 
-<h2>本文</h2>
-<p><%= @book.body %></p>
-
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  </a>
+  |
+  <a class="back" href="/books">Back</a>
+  
+  
+  <%= link_to "destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
+    
+</body>
