@@ -1,9 +1,9 @@
 <h1>新規</h1>
-　　<% if @book.errors.any? %>
-      <%= @book.errors.count %>errors prohibited this book from being saved:
-      <ul>
-        <% @book.errors.full_messages.each do |messages| %>
-          <li><%= messages %></li>
-      <% end %>
-      </ul>
+　<% if @book.errors.any? %>
+    <%= @book.errors.count %>errors prohibited this book from being saved:
+    <ul>
+      <% @book.errors.full_messages.each do |messages| %>
+        <li><%= messages %></li>
     <% end %>
+    </ul>
+  <% end %>

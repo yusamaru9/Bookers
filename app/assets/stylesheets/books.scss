@@ -4,12 +4,15 @@
 html {
     display: block;
 }
+
 head {
     display: none;
 }
+
 style {
     display: none;
 }
+
 body {
       background-color: #fff;
     color: #333;
@@ -18,12 +21,14 @@ body {
     line-height: 18px;
     margin: 33px;
 }
+
 p, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin: 33px;
 }
+
 h1 {
     display: block;
     font-size: 2em;
@@ -33,6 +38,19 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 able {
     display: table;
     border-collapse: separate;
@@ -40,4 +58,8 @@ able {
     text-indent: initial;
     border-spacing: 2px;
     border-color: grey;
+}
+
+label {
+    display: block;
 }

@@ -1,5 +1,5 @@
 <body>
-  <p id="notice">Book was successfully created.</p>
+  
   <p>
     <strong>Title:</strong>
     <%= @book.title %>
@@ -11,11 +11,10 @@
   </p>
 
   <%= link_to "Edit", edit_book_path(@book.id) %>
-  </a>
+  
   |
+  
   <a class="back" href="/books">Back</a>
   
-  
-  <%= link_to "destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
     
 </body>
